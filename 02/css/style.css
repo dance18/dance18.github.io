@@ -17,3 +17,20 @@ h5{
 p{
     text-indent: 2em;
 }
+.banner-text{
+    float: none;
+}
+.banner-text h2{
+    font-size: 55px;
+    font-weight: 400;
+}
+.banner-text button{
+    padding: 10px 50px;
+    border: none;
+    background-color: #689700;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
