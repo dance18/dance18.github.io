@@ -1,0 +1,19 @@
+body{
+    width: 450px;
+    margin: 0 auto;
+    background: #e3e3e3;
+    color: #fff;
+    padding-top: 90px;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+p{
+    text-indent: 2em;
+}
