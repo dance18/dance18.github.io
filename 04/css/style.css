@@ -1,5 +1,7 @@
-body{
-    background-color:white;
-    color: hotpink;
-
+.itme{
+    box-sizing: :content-box;
+    width: 100px;
+    height: 100px;
+    border:solid 10px #7dd4f2;
+    padding: 10px;
 }
