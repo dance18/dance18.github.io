@@ -2,18 +2,20 @@
     margin: 0 auto;
     padding: 0;
     border: 0;
-    width: 100%;
+    width: 100px;
     background-color: #ff002b;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 img {
     display: block;
-    width: 30%;
-    margin: 0 auto;
+    width: 60px;
+    height: auto;
+    margin: 30%;
+    
 }
 .container{
-    width: 968px;
+    width: 968px;   /* 页面宽度 */
     margin: 0 auto;
     padding: 0 10px;
     text-align: -webkit-center;
