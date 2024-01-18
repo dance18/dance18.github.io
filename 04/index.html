@@ -3,24 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>豆瓣网</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Secret Garden</title>
+    <style>
+        *{  margin: 0 ;
+            padding: 0;
+            /* background: url(./images/logo.png) no-repeat center 80px; */
+            /* background-color: #ffe1e1; */
+        }
+        .btys{                 /* 标题样式 */
+            width: 100vw;      /* vw,vh是可视宽高百分比，最大值100 */
+            height: 4vh;
+            font-size: 10px;
+            background: pink;
+            /* 水平垂直居中 */
+            text-align: center;
+            line-height: 4vh;
+            position: fixed;    /* 固定标题盒子样式保持不动 */
+            left: 0px;          /* 固定标题在左上角 */
+            bottom: 0px;
+        }
+        .container{
+            width: 99vw;      
+            margin-top: 1vh;     /* 第一段的指引不见了，设置顶部距离让其显示出来 */
+        }
+        .nav{
+            width: 100%;
+            height: 300px;
+            border: 1px solid black;
+            background-color: #ffd2d2;
+        }
+        .one{
+            width: 170px;
+            height: 30px;
+            font-size: 14px ;
+            
+            /* background-color: rgb(220, 219, 219); */
+            text-indent: 60px;
+            line-height: 30px;
+            float: left;
+        }
+        .two{
+            width: 180px;
+            height: 30px;
+            font-size: 14px ;
+            /* border: 1px solid #c0c0c0; */
+            background: url(./images/buy.png) no-repeat right 1px;
+            /* background-color: rgb(220, 219, 219); */
+            text-indent: 45px;
+            line-height: 30px;
+            float: left;
+        }
+        .nav a{
+            color: rgb(25, 25, 25);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 100;
+            margin: 10px auto;
+        }
+        #logo{
+            text-align: center;
+        }
+        .header{
+            width: 100%;
+            height: 300px;
+            border: 1px solid black;
+        }
+        .header h4{
+            text-indent: 2em;
+        }
+        
+        .main{
+            width: auto;
+            height: auto;
+            border: 1px solid #c0c0c0;
+            margin: 20px auto;
+            /* text-align: center; */
+     
+        }
+        .main h4{
+            color: #424242;
+            text-align: left;
+            text-indent: 2em;
+            /* padding: 300px; */
+        }
+        .main p{
+            font-size: 14px;
+            color: #6d6d6d;
+            padding-top: 300px; 
+        }
+        .sidebar{
+            width: auto;
+            height: 210px;
+            border: 1px solid #c0c0c0;
+            /* margin: 20px auto; */
+        }
+        .sidebar h4{
+            text-indent: 2em;
+        }
+        .sidebar strong{
+            color: rgb(81, 129, 252);
+            font-weight: 500;
+        }
+        .sidebar p{
+            font-size: 12px;
+            color: #a09999;
+            text-align: left;
+            text-indent: 2em;
+        }
+        .bottor{
+
+        }
+    
+    </style>
 </head>
-
 <body>
- 
-    <div style="display: fles; width: 70%; margin: 0 auto;">
-        <div style="flex: 1;display: flex;">
-            <div style="width: 100px;"><h2>豆瓣网</h2></div>
-            <div style="flex: 1 font: size 30px; color: #2f973e;"><input type="text"></div>
+    <div class="btys">为了方便浏览，请用浏览器打开</div>
+
+    <div class="container">
+
+        <div class="nav">
+            <div class="one">
+                <a href="https://www.jd.com/">点击屏幕右上角</a>
+            </div>
+            <div class="two">
+                <a href="https://www.jd.com/">在默认浏览器中打开</a>
+            </div>
+            <p id="logo"><img src="./images/logo.png" alt="" style="padding: 30px;"></p>
+            <p style="text-align: center;">私人定制，不懂勿入，自备纸巾</p>
+            <p style="text-align: center;">同城伴游 一对一语音 想你所想</p>
         </div>
-        <div style="flex: 1">
-            <div>读书</div>
-            <div>电影</div>
-            <div>音乐</div>
+
+        <hr>
+
+        <div class="header">
+            <h4>群成员</h4>
+            <p>内容添加中</p>
         </div>
+        <hr>
+        <div class="main">
+            <h4>群介绍</h4>
+            <ol>
+                <li>1、未满18周岁请立即离开</li>
+                <li>2、成人备好纸巾,不懂勿拍</li>
+                <li>3、私人定制,切莫转发</li>
+            </ol>
+        </div>
+        <div class="sidebar">
+            <h4>常见问题</h4>
+            <strong>一.付费后支持退款吗?</strong>
+            <p>一旦付费,无论任何原因概不退款,请谨慎选择,看好再买。之所以设置门槛是为了删选一部分垃圾人, 
+                过滤人群,提升群质量。避免人多乱发广告,杜绝个别白嫖群众。</p>
+            <br>
+            <strong>一.付费后支持退款吗?</strong>
+            <p>各个城市的小姐姐都有，可以互看，交流，一对一等。有同城的可以自行交流，但是不可以乱发广告。
+                 会持续更新视频、图片内容。</p>
+        </div>
+        <hr>
+    
+        <div class="bottor">
+            <span>阅读10万+</span>
+            <br>
+            <br>
+            <p>分享  收藏   8888    8888</p>
+        </div>
+        <div class="footer">
+            <h4>群友评论（精选）</h4>
+           
+        </div>
+        <!-- <p>秘密花园科技娱乐集团&copy; &nbsp;诚意出品</p> -->
+
     </div>
-
+    
 </body>
-
 </html>
