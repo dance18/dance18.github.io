@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secret Garden</title>
+    <title>Wercome To Secret Garden</title>
     <style>
         *{  margin: 0 ;
             padding: 0;
@@ -12,31 +12,31 @@
         }
         .btys{                 /* 标题样式 */
             width: 100vw;      /* vw,vh是可视宽高百分比，最大值100 */
-            height: 4vh;
+            height: 5vh;
             font-size: 10px;
             background: pink;
             /* 水平垂直居中 */
             text-align: center;
-            line-height: 4vh;
+            line-height: 5vh;
             position: fixed;    /* 固定标题盒子样式保持不动 */
             left: 0px;          /* 固定标题在左上角 */
             bottom: 0px;
         }
         .container{
-            width: 99vw;      
-            margin-top: 1vh;     /* 第一段的指引不见了，设置顶部距离让其显示出来 */
+            width: 100vw;      
+            margin-bottom: 10vh;     /* 尾段的提示不见了，设置顶部距离让其显示出来 */
         }
+        /* 导航条 */
         .nav{
             width: 100%;
             height: 300px;
-            border: 1px solid black;
-            background-color: #ffd2d2;
+            border: 1px solid rgb(255, 0, 0);
+            background-color: #f0f0f0;
         }
         .one{
             width: 170px;
             height: 30px;
             font-size: 14px ;
-            
             /* background-color: rgb(220, 219, 219); */
             text-indent: 60px;
             line-height: 30px;
@@ -63,55 +63,89 @@
         #logo{
             text-align: center;
         }
+        /* 群成员 */
         .header{
             width: 100%;
             height: 300px;
-            border: 1px solid black;
+            border: 1px solid rgb(4, 255, 58);
         }
         .header h4{
             text-indent: 2em;
         }
-        
+        .header p{
+            text-align: center;
+            line-height: 260px;
+        }
+        /* 群介绍 */
         .main{
             width: auto;
             height: auto;
-            border: 1px solid #c0c0c0;
+            border: 1px solid #7700ff;
             margin: 20px auto;
             /* text-align: center; */
-     
         }
         .main h4{
             color: #424242;
             text-align: left;
             text-indent: 2em;
+            margin: 10px auto;
             /* padding: 300px; */
         }
-        .main p{
-            font-size: 14px;
+        .main ol>li{
+            font-size: 12px;
             color: #6d6d6d;
-            padding-top: 300px; 
+            text-indent: 2em;
+
         }
+    
+
+        /* 常见问题 */
         .sidebar{
             width: auto;
-            height: 210px;
+            height: 220px;
             border: 1px solid #c0c0c0;
             /* margin: 20px auto; */
         }
         .sidebar h4{
+            margin: 10px auto;
             text-indent: 2em;
         }
         .sidebar strong{
             color: rgb(81, 129, 252);
+            font-size: 14px;
             font-weight: 500;
+            
+
         }
         .sidebar p{
             font-size: 12px;
-            color: #a09999;
+            color: #6d6d6d;
             text-align: left;
             text-indent: 2em;
+            margin: 5px 20px;
         }
+        /* 阅读及点赞 */
         .bottor{
-
+            width: 100%;
+            height: 50px;
+            border: 1px solid black;
+        }
+        .bottor span{
+            color: #a8a8a8;
+            font-size: 14px;
+            margin-left: 2em;
+        
+        }
+        .bottor p{
+            font-size: 14px;
+            text-indent: 2em;
+        }
+       
+        /* 评论区 */
+        .footer{
+            width: auto;
+            height: 500px;
+            border: 1px solid rgb(255, 0, 106);
         }
     
     </style>
@@ -128,9 +162,10 @@
             <div class="two">
                 <a href="https://www.jd.com/">在默认浏览器中打开</a>
             </div>
-            <p id="logo"><img src="./images/logo.png" alt="" style="padding: 30px;"></p>
-            <p style="text-align: center;">私人定制，不懂勿入，自备纸巾</p>
-            <p style="text-align: center;">同城伴游 一对一语音 想你所想</p>
+            <!-- <p id="logo"><img src="./images/logo.png" alt="" style="padding: 30px;"></p> -->
+            <video src="./images/video.mp4" style="width: 80%; padding: 30px ;" controls></video>
+            <p style=" font-size: 1px; text-align: center;">私人定制，不懂勿入，自备纸巾</p>
+            <p style=" font-size: 13px; text-align: center;">同城伴游 | 一对一语音 | 想你所想</p>
         </div>
 
         <hr>
@@ -153,7 +188,6 @@
             <strong>一.付费后支持退款吗?</strong>
             <p>一旦付费,无论任何原因概不退款,请谨慎选择,看好再买。之所以设置门槛是为了删选一部分垃圾人, 
                 过滤人群,提升群质量。避免人多乱发广告,杜绝个别白嫖群众。</p>
-            <br>
             <strong>一.付费后支持退款吗?</strong>
             <p>各个城市的小姐姐都有，可以互看，交流，一对一等。有同城的可以自行交流，但是不可以乱发广告。
                  会持续更新视频、图片内容。</p>
@@ -162,7 +196,6 @@
     
         <div class="bottor">
             <span>阅读10万+</span>
-            <br>
             <br>
             <p>分享  收藏   8888    8888</p>
         </div>
