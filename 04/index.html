@@ -30,7 +30,7 @@
         .nav{
             width: 100%;
             height: 330px;
-            border: 1px solid rgb(255, 0, 0);
+            /* border: 1px solid rgb(255, 0, 0);  边框*/
             background-color: #f0f0f0;
         }
         .one{
@@ -38,8 +38,8 @@
             height: 30px;
             font-size: 14px ;
             /* background-color: rgb(220, 219, 219); */
-            background: url(./images/d.png) no-repeat right 1px;
-            text-indent: 60px;
+            background: url(./images/d.png) no-repeat 95px 1px;
+            text-indent: 10px;
             line-height: 30px;
             float: left;
         }
@@ -48,18 +48,25 @@
             height: 30px;
             font-size: 14px ;
             /* border: 1px solid #c0c0c0; */
-            background: url(./images/buy.png) no-repeat right 1px;
+            background: url(./images/safari.png) no-repeat 73px 1px;
             /* background-color: rgb(220, 219, 219); */
-            text-indent: 45px;
+            /* text-indent: 25px; */
             line-height: 30px;
             float: left;
         }
+ 
         .nav a{
             color: rgb(25, 25, 25);
             text-decoration: none;
             font-size: 12px;
             font-weight: 100;
             margin: 10px auto;
+        }
+        .nav strong{
+            color: #6d6d6d;
+            font-size: 12px; 
+            font-weight: 400;
+            padding: 15%;
         }
         #logo{
             text-align: center;
@@ -68,7 +75,8 @@
         .header{
             width: 100%;
             height: 300px;
-            border: 1px solid rgb(4, 255, 58);
+            border-top: 1px solid #c0c0c0;
+            border-bottom: 1px solid #c0c0c0; 
         }
         .header h4{
             text-indent: 2em;
@@ -80,8 +88,8 @@
         /* 群介绍 */
         .main{
             width: auto;
-            height: auto;
-            border: 1px solid #7700ff;
+            height: 100px;
+            border-bottom: 1px solid #c0c0c0; 
             margin: 20px auto;
             /* text-align: center; */
         }
@@ -93,18 +101,16 @@
             /* padding: 300px; */
         }
         .main ol>li{
-            font-size: 12px;
+            font-size: 14px;
             color: #6d6d6d;
             text-indent: 2em;
 
         }
-    
-
         /* 常见问题 */
         .sidebar{
             width: auto;
-            height: 220px;
-            border: 1px solid #c0c0c0;
+            height: 240px;
+            /* border: 1px solid #c0c0c0; */
             /* margin: 20px auto; */
         }
         .sidebar h4{
@@ -115,11 +121,9 @@
             color: rgb(81, 129, 252);
             font-size: 14px;
             font-weight: 500;
-            
-
         }
         .sidebar p{
-            font-size: 12px;
+            font-size: 14px;
             color: #6d6d6d;
             text-align: left;
             text-indent: 2em;
@@ -129,7 +133,9 @@
         .bottor{
             width: 100%;
             height: 70px;
-            border: 1px solid black;
+            border-top: 1px solid #c0c0c0;
+            /* border-bottom: 1px solid #c0c0c0; */
+
         }
         .bottor span{
             color: hsl(0, 0%, 70%);
@@ -163,12 +169,11 @@
             background: url(./images/thumbs-up.png) no-repeat center 0;
         } 
        
-       
         /* 评论区 */
         .footer{
             width: auto;
             height: 500px;
-            border: 1px solid rgb(255, 0, 106);
+            border-top: 1px solid rgb(255, 0, 106);
         }
         .footer td{
             /* border: 1px solid rgb(66, 66, 66); */
@@ -192,21 +197,19 @@
                 <a href="https://www.jd.com/">点击屏幕右上角</a>
             </div>
             <div class="two">
-                <a href="https://www.jd.com/">在默认浏览器中打开</a>
+                <a href="https://www.jd.com/">在默认浏览器 </a><strong>中打开</strong>
             </div>
             <!-- <p id="logo"><img src="./images/logo.png" alt="" style="padding: 30px;"></p> -->
             <video src="./images/video.mp4" style="width: 100%; text-align: center; margin: 20px auto;" controls></video>
-            <p style=" font-size: 1px; text-align: center;">私人定制，不懂勿入，自备纸巾</p>
+            <p style=" font-size: 13px; text-align: center;">私人定制，不懂勿入，自备纸巾</p>
             <p style=" font-size: 13px; text-align: center;">同城伴游 | 一对一语音 | 想你所想</p>
         </div>
-
-        <hr>
 
         <div class="header">
             <h4>群成员</h4>
             <p>内容添加中</p>
         </div>
-        <hr>
+    
         <div class="main">
             <h4>群介绍</h4>
             <ol>
@@ -215,6 +218,7 @@
                 <li>3、私人定制,切莫转发</li>
             </ol>
         </div>
+
         <div class="sidebar">
             <h4>常见问题</h4>
             <strong>一.付费后支持退款吗?</strong>
@@ -224,7 +228,6 @@
             <p>各个城市的小姐姐都有，可以互看，交流，一对一等。有同城的可以自行交流，但是不可以乱发广告。
                  会持续更新视频、图片内容。</p>
         </div>
-        <hr>
     
         <div class="bottor">
             <span>阅读 10万+</span>
@@ -233,10 +236,10 @@
                 <div class="icon2">收藏</div>
                 <div class="icon3">168</div>
                 <div class="icon4">8888</div>
-                    
             </div>
         </div>
-        <h4 style="margin: 10px auto; text-indent: 2em; color: #6d6d6d;" >群友评论（精选）</h4>
+
+        <h4 style="margin: 10px 100px; text-indent: -70px; color: #6d6d6d;" >群友评论</h4>
 
         <div class="footer">
             <table>
