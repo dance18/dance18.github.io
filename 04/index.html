@@ -38,6 +38,7 @@
             height: 30px;
             font-size: 14px ;
             /* background-color: rgb(220, 219, 219); */
+            background: url(./images/d.png) no-repeat right 1px;
             text-indent: 60px;
             line-height: 30px;
             float: left;
@@ -127,19 +128,41 @@
         /* 阅读及点赞 */
         .bottor{
             width: 100%;
-            height: 50px;
+            height: 70px;
             border: 1px solid black;
         }
         .bottor span{
-            color: #a8a8a8;
+            color: hsl(0, 0%, 70%);
             font-size: 14px;
             margin-left: 2em;
-        
         }
-        .bottor p{
+        .icon{
             font-size: 14px;
-            text-indent: 2em;
+            color: #576B94;
+            margin: 10px 2px;
+            float: right;
         }
+        .bottor .icon1{
+            float: left;
+            padding: 20px;
+            background: url(./images/share.png) no-repeat center 0;
+        }
+        .bottor .icon2{
+            float: left;
+            padding: 20px;
+            background: url(./images/favorites.png) no-repeat center 0;
+        }
+        .bottor .icon3{
+            float: left;
+            padding: 20px;
+            background: url(./images/look.png) no-repeat center 0;
+        }
+        .bottor .icon4{
+            float: left;
+            padding: 20px;
+            background: url(./images/thumbs-up.png) no-repeat center 0;
+        } 
+       
        
         /* 评论区 */
         .footer{
@@ -204,9 +227,14 @@
         <hr>
     
         <div class="bottor">
-            <span>阅读10万+</span>
-            <br>
-            <p>分享  收藏   8888    8888</p>
+            <span>阅读 10万+</span>
+            <div class="icon">
+                <div class="icon1">分享</div>
+                <div class="icon2">收藏</div>
+                <div class="icon3">168</div>
+                <div class="icon4">8888</div>
+                    
+            </div>
         </div>
         <h4 style="margin: 10px auto; text-indent: 2em; color: #6d6d6d;" >群友评论（精选）</h4>
 
