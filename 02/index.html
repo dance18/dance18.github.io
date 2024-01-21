@@ -3,50 +3,370 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Wecome To Secret Garden</title>
+    <style>
+        *{  margin: 0 ;
+            padding: 0;
+            /* background: url(./images/logo.png) no-repeat center 80px; */
+            /* background-color: #ffe1e1; */
+        }
+        .btys{                 /* 标题样式 */
+            width: 90vw;      /* vw,vh是可视宽高百分比，最大值100 */
+            height: 6vh;
+            font-size: 18px;
+            font-weight: 600;
+            background: rgb(66, 211, 61);
+            border-radius: 20px;
+            /* 水平垂直居中 */
+            text-align: center;
+            line-height: 6vh;
+            position: fixed;    /* 固定标题盒子样式保持不动 */
+            left: 20px;          /* 固定标题在左上角 */
+            bottom: 0px;
+        }
+        .container{
+            width: 100%;      
+            margin-bottom: 10vh;     /* 尾段的提示不见了，设置顶部距离让其显示出来 */
+        }
+        /* 导航条 */
+        .nav{
+            width: 100%;
+            height: 360px;
+            /* border: 1px solid rgb(255, 0, 0);  边框*/
+            background-color: #f0f0f0;
+        }
+        .one{
+            width: 170px;
+            height: 30px;
+            font-size: 14px ;
+            /* background-color: rgb(220, 219, 219); */
+            background: url(./images/d.png) no-repeat 95px 1px;
+            text-indent: 10px;
+            line-height: 30px;
+            float: left;
+        }
+        .two{
+            width: 180px;
+            height: 30px;
+            font-size: 14px ;
+            /* border: 1px solid #c0c0c0; */
+            background: url(./images/safari.png) no-repeat 73px 1px;
+            /* background-color: rgb(220, 219, 219); */
+            /* text-indent: 25px; */
+            line-height: 30px;
+            float: left;
+        }
+ 
+        .nav a{
+            color: rgb(25, 25, 25);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 100;
+            margin: 10px auto;
+        }
+        .nav strong{
+            color: #6d6d6d;
+            font-size: 12px; 
+            font-weight: 400;
+            padding: 15%;
+        }
+        #logo{
+            text-align: center;
+        }
+        /* 群成员 */
+        .header{
+            width: 100%;
+            height: 330px;
+            border-top: 1px solid #c0c0c0;
+            border-bottom: 1px solid #c0c0c0; 
+        }
+        .header h4{
+            color: #424242;
+            text-align: left;
+            text-indent: 2em;
+            margin: 10px auto;
+        }
+        .userbox{
+            width: 360px;
+            height: auto;
+            margin: 10px auto;
+      
+        }
+        .user{
+            width: 60px;
+            height: auto;
+            overflow: hidden;
+            padding: 6px;
+            float: left;
+        }
+        .user img{
+            width: 60px;
+            height: 60px;
+        }
+        .user>p{
+            color: rgb(98, 98, 98);
+            font-size: 13px;
+            text-align: center; 
+        }
+        /* 群介绍 */
+        .main{
+            width: auto;
+            height: 110px;
+            border-bottom: 1px solid #c0c0c0; 
+            margin: 15px auto;
+            /* text-align: center; */
+        }
+        .main h4{
+            color: #424242;
+            text-align: left;
+            text-indent: 2em;
+            margin: 10px auto;
+            /* padding: 300px; */
+        }
+        .main ol>li{
+            font-size: 14px;
+            color: #6d6d6d;
+            text-indent: 2em;
+
+        }
+        /* 常见问题 */
+        .sidebar{
+            width: auto;
+            height: 240px;
+            /* border: 1px solid #c0c0c0; */
+            /* margin: 20px auto; */
+        }
+        .sidebar h4{
+            margin: 10px auto;
+            text-indent: 2em;
+        }
+        .sidebar strong{
+            color: rgb(81, 129, 252);
+            font-size: 14px;
+            font-weight: 500;
+            padding-left: 20px;
+        }
+        .sidebar p{
+            font-size: 14px;
+            color: #6d6d6d;
+            text-align: left;
+            text-indent: 2em;
+            margin: 5px 20px;
+        }
+        /* 阅读及点赞 */
+        .bottor{
+            width: 100%;
+            height: 80px;
+            border-top: 1px solid #c0c0c0;
+            /* border-bottom: 1px solid #c0c0c0; */
+
+        }
+        .bottor span{
+            color: hsl(0, 0%, 70%);
+            font-size: 14px;
+            margin-left: 2em;
+        }
+        .icon{
+            font-size: 14px;
+            color: #576B94;
+            margin: 30px 2px;
+            float: right;
+        }
+        .bottor .icon1{
+            float: left;
+            padding: 20px;
+            background: url(./images/share.png) no-repeat center 0;
+        }
+        .bottor .icon2{
+            float: left;
+            padding: 20px;
+            background: url(./images/favorites.png) no-repeat center 0;
+        }
+        .bottor .icon3{
+            float: left;
+            padding: 20px;
+            background: url(./images/look.png) no-repeat center 0;
+        }
+        .bottor .icon4{
+            float: left;
+            padding: 20px;
+            background: url(./images/thumbs-up.png) no-repeat center 0;
+        } 
+       
+        /* 评论区 */
+        .footer{
+            width: auto;
+            height: 500px;
+            border-top: 1px solid #c0c0c0(255, 0, 106);
+        }
+        .footer td{
+            /* border: 1px solid rgb(66, 66, 66); */
+            width: auto;
+            height: auto;
+        }
+        span{
+            color: #576B94;
+            margin-top: 5px auto;
+        }
+    
+    </style>
 </head>
 <body>
-    <!-- 顶部标签 -->
-    <div id="header">
-        <div class="header">
-            <div class="header_left"></div>
-            <div class="header_right"></div>
-        </div>
-    </div>
-    <!-- 顶部标签结束 -->
-    <!-- 视频标签 -->
-     <div id="logo">
-        <div class="logo_top"></div>
-        <div class="logo_bottom"></div>
-     </div>
-    <!-- 视频标签结束 -->
-    <!-- 群区域 -->
-    <section id="user">
-        <section class="user">
-            <section>1</section>
-            <section>2</section>
-            <section>3</section>
-            <section>4</section>
-            <section>5</section>
-        </section>
-        <section class="user">
-            <section>1</section>
-            <section>2</section>
-            <section>3</section>
-            <section>4</section>
-            <section>5</section>
-        </section>
-        <section class="user">
-            <section>1</section>
-            <section>2</section>
-            <section>3</section>
-            <section>4</section>
-            <section>5</section>
-        </section>
-    </section>
-    <div></div>
+    <div class="btys"><a style="text-decoration: none; color: #000000;"  href="https://dance18.github.io/03/">限时¥9.9元入群 (原价39.9) </a></div>
 
+    <div class="container">
+
+        <div class="nav">
+            <div class="one">
+                <a href="https://www.jd.com/">点击屏幕右上角</a>
+            </div>
+            <div class="two">
+                <a href="https://www.jd.com/">在默认浏览器 </a><strong>中打开</strong>
+            </div>
+            <!-- <p id="logo"><img src="./images/logo.png" alt="" style="padding: 30px;"></p> -->
+            <video src="./images/video.mp4" style="width: 100%; text-align: center; margin: 20px auto;" controls></video>
+            <p style=" font-size: 13px; text-align: center;">私人定制，不懂勿入，自备纸巾</p>
+            <p style=" font-size: 13px; text-align: center;">同城伴游 | 一对一语音 | 想你所想</p>
+        </div>
+
+        <div class="header">
+            <h4>群成员</h4>
+            <div class="userbox">
+                <div class="user">
+                    <img src="./images/t1.png">
+                    <p>我心永恒</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t2.png" >
+                    <p>午夜...</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t3.png">
+                    <p>A李力</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t4.png">
+                    <p>温柔乡</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t5.png">
+                    <p>八戒你...</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t6.png">
+                    <p>、歸隱°</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t7.png">
+                    <p>曾德强</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t8.png">
+                    <p>假装浪漫</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t9.png">
+                    <p>七月的风</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t11.png">
+                    <p>温柔∝乡</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t12.png">
+                    <p>朕ざ有...</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t13.png">
+                    <p>谁明浪...</p>
+                </div>
+                <div class="user">
+                    <img src="./images/t15.png">
+                    <p>恶狼传说</p>
+                </div>
+            </div>
+            
+        </div>
     
+        <div class="main">
+            <h4>群介绍</h4>
+            <ol>
+                <li>1、未满18周岁请立即离开</li>
+                <li>2、成人备好纸巾,不懂勿拍</li>
+                <li>3、私人定制,切莫转发</li>
+            </ol>
+        </div>
+
+        <div class="sidebar">
+            <h4>常见问题</h4>
+            <strong>一.付费后支持退款吗?</strong>
+            <p>一旦付费,无论任何原因概不退款,请谨慎选择,看好再买。之所以设置门槛是为了删选一部分垃圾人, 
+                过滤人群,提升群质量。避免人多乱发广告,杜绝个别白嫖群众。</p>
+            <strong>一.付费后支持退款吗?</strong>
+            <p>各个城市的小姐姐都有，可以互看，交流，一对一等。有同城的可以自行交流，但是不可以乱发广告。
+                 会持续更新视频、图片内容。</p>
+        </div>
+    
+        <div class="bottor">
+            <span>阅读 10万+</span>
+            <div class="icon">
+                <div class="icon1">分享</div>
+                <div class="icon2">收藏</div>
+                <div class="icon3">168</div>
+                <div class="icon4">8888</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h4 style="margin: 10px 100px; text-indent: -70px; color: #6d6d6d;" >群友评论</h4>
+            <table>
+                <tr>
+                    <td rowspan="2"><img src="./images/t1.png" alt="" width="50px"></td>
+                    <td colspan="2" style="color: #6d6d6d; font-size: 16px;">少女病</td>
+                    <!-- <td>数学</td> -->
+                    <td><span><img src="./images/thumbs-up.png" alt="">赞:328</span> </td>
+                </tr>
+                <tr>
+                    <!-- <td>张三</td> -->
+                    <td colspan="2">该说不说,全是我爱看的黑丝渔网!牛逼 哥喜欢</td>
+                    <!-- <td>手指</td> -->
+                    <!-- <td>赞:168</td> -->
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td rowspan="2"><img src="./images/t2.png" alt="" width="50px"></td>
+                    <td colspan="2" style="color: #6d6d6d; font-size: 16px;">准风月谈</td>
+                    <!-- <td>数学</td> -->
+                    <td><span><img src="./images/thumbs-up.png" alt="">赞:839</span></td>
+                </tr>
+                <tr>
+                    <!-- <td>张三</td> -->
+                    <td colspan="2">身材太牛B了,奶子真大 全是黑色</td>
+                    <!-- <td>手指</td> -->
+                    <!-- <td>赞:168</td> -->
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td rowspan="2"><img src="./images/t3.png" width="50px"></td>
+                    <td colspan="2" style="color: #6d6d6d; font-size: 16px;">隔壁老王</td>
+                    <!-- <td>数学</td> -->
+                    <td><span><img src="./images/thumbs-up.png" alt="">赞:1888</span></td>
+                </tr>
+                <tr>
+                    <!-- <td>张三</td> -->
+                    <td colspan="2">丽莎小姐姐是真能喘……</td>
+                    <!-- <td>手指</td> -->
+                    <!-- <td>赞:168</td> -->
+                </tr>
+            </table>
+            
+            <!-- <h4>群友评论（精选）</h4> -->
+
+        </div>
+        <!-- <p>秘密花园科技娱乐集团&copy; &nbsp;诚意出品</p> -->
+
+    </div>
 </body>
 </html>
