@@ -1,26 +1,42 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* background-color: #73c9ff; */
 }
 .container{
-    width: 90%;   /* 页面宽度 */
+    width: 100%;   /* 页面宽度 */
     height: 100%;
-    margin: 0 0;
-    
-
+    background-color: #f5f5f5;
 }
 .header{
-    width: 100vw;
-    height: 400px;
-    border-bottom: 1px solid rgb(199, 198, 198);
-    text-align: center;
+    width: 100%;
+    height: auto;
+    border: #ff5c5c 1px solid;
 }
 .header p{
-    color: red;
+    color:#686868;
     font-size: 16px;
+    text-align: center;
+}
+.header button{
+    border: none;
+    background: yellowgreen;
+}
+.userbox{
+    border: #5a3cff 1px solid;
+    width: 100%;
+    height: auto;
 }
 
-
+.userbox h4{
+    margin: 10px 0;
+    text-indent: 2em;
+}
+#user{
+    width: 30px;
+    height: 30px;
+}
 
 
 
