@@ -2,41 +2,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #73c9ff; */
 }
-.container{
-    width: 100%;   /* 页面宽度 */
-    height: 100%;
-    background-color: #f5f5f5;
+#header{
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid black;
 }
 .header{
     width: 100%;
-    height: auto;
-    border: #ff5c5c 1px solid;
+    height: 20px;
+    border: 1px solid rgb(0, 255, 76);
+    margin: 0px auto;
 }
-.header p{
-    color:#686868;
-    font-size: 16px;
-    text-align: center;
+.header_left{
+    width: 400px;
+    height: 20px;
+    border: 1px solid rgb(99, 2, 255);
+    float: left;
 }
-.header button{
-    border: none;
-    background: yellowgreen;
-}
-.userbox{
-    border: #5a3cff 1px solid;
-    width: 100%;
-    height: auto;
-}
+.header_right{
+    width: 400px;
+    height: 20px;
+    border: 1px solid rgb(2, 255, 69);
+    float: right;
+}  /* header style end */
 
-.userbox h4{
-    margin: 10px 0;
-    text-indent: 2em;
+/* logo style start */
+#logo{
+    width: 1200px;
+    height: 340px;
+    border: 1px solid rgb(255, 87, 115);
+    margin: 0 auto;
 }
+.logo_top{
+    width: 1000px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.logo_bottom{
+    width: 800px;
+    height: 40px;
+    border: 1px solid rgb(55, 0, 255);
+    margin: 0 auto;
+}
+/* logo style end */
+/* user style start */
 #user{
-    width: 30px;
-    height: 30px;
+    width: 60%;
+    border: 1px solid yellowgreen;
+    margin: 0 auto;
 }
-
-
-
+.user{
+    width: 100%;
+    /* height: 300px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.user>section{
+    width: 15%;
+    height: 50px;
+    border: 1px solid black;
+}
