@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(182, 182, 182);
+}
+div{
+    width: 500px;
+    height: 20px;
+    background-color: #5232ed;
+    margin: 100px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+div ul{
+    width: 100%;
+    height: 500%;
+    background-color: #5232ed;
+    position: absolute;
+    top: 0%;
+    animation: turn 6s infinite linear;   
+}
+div ul li{
+    color:white;
+    font-size: 14px;
+    list-style: none;
+    width: 100%;
+    height: 30px;
+    text-align: center;   
+}
+@keyframes turn{
+    0%{top: 0%;}
+    100%{top: -500%;}
+}
